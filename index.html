@@ -2,6 +2,7 @@
 
 
 
+
 <!DOCTYPE html>
 
 <html>
@@ -16,39 +17,38 @@
 		<!-- CSS -->
 		<link type="text/css" rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:300,400,400italic' />
 		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-		<link type="text/css" rel="stylesheet" href="./assets/css/reset.css" />
-		<link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-		<link type="text/css" rel="stylesheet" href="./assets/css/fonts.css" />
-		<link type="text/css" rel="stylesheet" href="./assets/css/style.css" />
-		<link type="text/css" rel="stylesheet" href="./assets/css/style-mobile.css" />
-		<link type="text/css" rel="stylesheet" href="./assets/css/intro-section.css" />
-		<link type="text/css" rel="stylesheet" href="./assets/js/ext/tiltfx.css" />
-		<link type="text/css" rel="stylesheet" href="./assets/js/ext/animate.css" />
+		<link type="text/css" rel="stylesheet" href="http://summersidefurniture.com/assets/css/reset.css" />
+		<link type="text/css" rel="stylesheet" href="http://summersidefurniture.com/assets/css/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="http://summersidefurniture.com/assets/css/fonts.css" />
+		<link type="text/css" rel="stylesheet" href="http://summersidefurniture.com/assets/css/style.css" />
+		<link type="text/css" rel="stylesheet" href="http://summersidefurniture.com/assets/css/intro-section.css" />
+		<link type="text/css" rel="stylesheet" href="http://summersidefurniture.com/assets/js/ext/tiltfx/tiltfx.css" />
+		<link type="text/css" rel="stylesheet" href="http://summersidefurniture.com/assets/js/ext/textillate/animate.css" />
 		
 		<!-- NOVEL -->
-		<link type="text/css" rel="stylesheet" href="./assets/css/novel.css" />
-		<link type="text/css" rel="stylesheet" href="./assets/css/novel-lake.css" />
-		<link type="text/css" rel="stylesheet" href="./assets/css/novel-eyes.css" />
-		<link type="text/css" rel="stylesheet" href="./assets/css/novel-garden.css" />
+		<link type="text/css" rel="stylesheet" href="http://summersidefurniture.com/assets/css/novel.css" />
+		<link type="text/css" rel="stylesheet" href="http://summersidefurniture.com/assets/css/novel-lake.css" />
+		<link type="text/css" rel="stylesheet" href="http://summersidefurniture.com/assets/css/novel-eyes.css" />
+		<link type="text/css" rel="stylesheet" href="http://summersidefurniture.com/assets/css/novel-garden.css" />
 		
 		
 		<!-- JS -->
 		<!-- <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.domElement.style.cssText='position:fixed;left:0;top:0;z-index:10000';document.body.appendChild(stats.domElement);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()</script> -->
-  		<script src="./assets/js/ext/require.js"></script>
+  		<script src="http://summersidefurniture.com/assets/js/ext/require.js"></script>
 		<script>
 			var App = App || {};
-			App.PAGE_ID = '';
-			App.LANG = '';
-			App.BASEURL = '.';
+			App.PAGE_ID = 'home';
+			App.LANG = 'en';
+			App.BASEURL = 'http://summersidefurniture.com';
 	        App.VERSION = (new Date()).getTime();
 	        App.SUBMITTEDFORM = false;
 	        App.VERSION = "0.6";
 	        require.config({
 	            urlArgs : "bust="+App.VERSION,
-	            baseUrl : "./assets/js"
+	            baseUrl : "http://summersidefurniture.com/assets/js"
 	        });
-	       	require(["./assets/js-build/app.js"]);
-	       	// require(["http://www.stylenovels.com/assets/js/app.js"]);
+	       	require(["http://summersidefurniture.com/assets/js-build/app.js"]);
+	       	// require(["http://summersidefurniture.com/assets/js/app.js"]);
 	    </script>
 	    
 	    
@@ -72,7 +72,7 @@
 	
 	<body>
 		
-		<audio  class="birds-loop loop" src="./assets/audio/birds-loop.mp3" loop></audio>
+		<audio  class="birds-loop loop" src="http://summersidefurniture.com/assets/audio/birds-loop.mp3" loop></audio>
 		
 		
 		<div class="grid-overlay container-fluid">
@@ -121,7 +121,7 @@
 			
 			<!-- SOUND SWITCHER -->
 			<div class="sound-switcher">
-				<img class="sound-pulse" src="./assets/imgs/general/pulse-sound.svg" />
+				<img class="sound-pulse" src="http://summersidefurniture.com/assets/imgs/general/pulse-sound.svg" />
 				<i class="ico-sound ico-sound-on material-icons">volume_up</i>
 				<i class="ico-sound ico-sound-off material-icons">volume_off</i>
 			</div>
@@ -134,8 +134,10 @@
 			</div>
 			
 			
+			
 			<!-- CERCHIO INTRO -->
 			<div id="main-circle-intro">
+				
 				
 				
 				<div class="main-circle-wrapper">
@@ -147,14 +149,28 @@
 						</svg>
 					</div>
 					
+					
+					
 					<!-- titolo iniziale -->
 					<div class="main-circle-title-wrapper">
 						<div class="main-circle-title">style<br /> NOVELS</div>
+						
+											
+						
 						<div class="sub-circle-title">a history of furniture</div>
 					</div>
 					
+						
+					<div id="scroll-info" style="position:relative" > 
+					<a href="">
+					<img src="http://summersidefurniture.com/assets/imgs/general/arrow.png" style="width:5%">
+					</a>
+					</div>
+
+				   
+					
 					<!-- nav dots -->
-					<div class="intro-nav-dot dot-lake closed" data-novel="lake">
+					<!--<div class="intro-nav-dot dot-lake closed" data-novel="lake">
 						<span>I.</span>
 						<div class="intro-nav-dot-closer cerchio-closer">
 							<div class="cerchio-closer-container">
@@ -184,28 +200,28 @@
 					
 					
 					<!-- div preview novel -->
-					<div class="preview-novel-wrapper">
+					<!-- <div class="preview-novel-wrapper">
 						<div class="preview-novel-container">
 							
 														
 							<div class="preview-novel-content" data-novel="lake">
-								<img class="timbro" data-src-img="./assets/imgs/general/intro/lake/timbro.jpg" />
+								<img class="timbro" data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/timbro.jpg" />
 								<div class="preview-novel-imgs">
 									<div class="mask"></div>
-																													<img data-src-img="./assets/imgs/general/intro/lake/0.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/lake/1.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/lake/2.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/lake/3.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/lake/0.jpg" />
-																													<img data-src-img="./ssets/imgs/general/intro/lake/1.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/lake/2.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/lake/3.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/lake/0.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/lake/1.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/lake/2.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/lake/3.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/lake/0.jpg" />
-																		<img data-src-img="./assets/imgs/general/intro/lake/12.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/0.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/1.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/2.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/3.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/0.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/1.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/2.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/3.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/0.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/1.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/2.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/3.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/0.jpg" />
+																		<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/lake/12.jpg" />
 								</div>
 								<div class="preview-novel-text">the colors of the LAKE</div>
 								<div class="preview-novel-scroll cerchio-arrow" data-novel="lake">
@@ -216,23 +232,23 @@
 	
 														
 							<div class="preview-novel-content" data-novel="garden">
-								<img class="timbro" data-src-img="./assets/imgs/general/intro/garden/timbro.jpg" />
+								<img class="timbro" data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/timbro.jpg" />
 								<div class="preview-novel-imgs">
 									<div class="mask"></div>
-																													<img data-src-img="./assets/imgs/general/intro/garden/0.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/garden/1.jpg" />
-																													<img data-src-img="./ssets/imgs/general/intro/garden/2.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/garden/3.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/garden/0.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/garden/1.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/garden/2.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/garden/3.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/garden/0.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/garden/1.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/garden/2.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/garden/3.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/garden/0.jpg" />
-																		<img data-src-img="./assets/imgs/general/intro/garden/12.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/0.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/1.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/2.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/3.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/0.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/1.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/2.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/3.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/0.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/1.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/2.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/3.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/0.jpg" />
+																		<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/garden/12.jpg" />
 								</div>
 								<div class="preview-novel-text">a small secret GARDEN</div>
 								<div class="preview-novel-scroll cerchio-arrow" data-novel="garden">
@@ -243,23 +259,23 @@
 	
 														
 							<div class="preview-novel-content" data-novel="eyes">
-								<img class="timbro" data-src-img="./assets/imgs/general/intro/eyes/timbro.jpg" />
+								<img class="timbro" data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/timbro.jpg" />
 								<div class="preview-novel-imgs">
 									<div class="mask"></div>
-																													<img data-src-img="./assets/imgs/general/intro/eyes/0.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/1.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/2.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/3.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/0.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/1.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/2.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/3.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/0.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/1.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/2.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/3.jpg" />
-																													<img data-src-img="./assets/imgs/general/intro/eyes/0.jpg" />
-																		<img data-src-img="./assets/imgs/general/intro/eyes/12.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/0.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/1.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/2.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/3.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/0.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/1.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/2.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/3.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/0.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/1.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/2.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/3.jpg" />
+																													<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/0.jpg" />
+																		<img data-src-img="http://summersidefurniture.com/assets/imgs/general/intro/eyes/12.jpg" />
 								</div>
 								<div class="preview-novel-text">the journey of the EYES</div>
 								<div class="preview-novel-scroll cerchio-arrow" data-novel="eyes">
@@ -270,7 +286,7 @@
 	
 														
 						</div>
-					</div>
+					</div>-->
 
 
 					
@@ -279,7 +295,7 @@
 				
 				
 				<!-- div preloader novel -->
-									<div class="preloader-novel-wrapper" data-novel="lake">
+								<!-- 	<div class="preloader-novel-wrapper" data-novel="lake">
 						<div class="preloader-novel-background" style="background-color: #BCC7C9;"></div>
 						
 											
@@ -356,7 +372,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 								
 				
 			</div>
@@ -365,10 +381,10 @@
 		</section>
 		
 		
-		
+		<!--
 		<div class="rotate-device">
 			<i class="ico-rotate material-icons">screen_rotation</i>
-		</div>
+		</div>-->
 		
 		
 		
