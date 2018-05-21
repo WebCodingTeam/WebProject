@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<title>HOME || SUMMER SIDE</title>
+	<!--<meta name="keywords" content="小林幹也, デザイン, インテリア, プロダクト, 家具, イス, ブランド, ディレクション, プランニング, みきや, design, interior, product, chair, brand, kobayashi, mikiya, ukihashi, moreTrees, 株式会社小林幹也スタジオ, スタジオ" />
+	<meta name="description" content="株式会社小林幹也スタジオ | MIKIYA KOBAYASHI INC.は小林幹也（デザイナー）が代表を務めるデザイン会社です。家具やプロダクトの商品開発およびディレクション業務、インテリアに関する企画、プランニング及びデザインなど設計業務、各種プランニングおよびディレクション業務また企業のコンサルティング業務などを行っています。" />
+	<meta name="author" content="MIKIYA KOBAYASHI INC." />
+    <meta property="og:title" content="MIKIYA KOBAYASHI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://summersidefurniture.com/" />
+    <meta property="og:image" content="http://summersidefurniture.com/common/img/ogp.jpg" />
+    <meta property="og:site_name" content="MIKIYA KOBAYASHI" />
+    <meta property="og:description" content="株式会社小林幹也スタジオ | MIKIYA KOBAYASHI INC.は小林幹也（デザイナー）が代表を務めるデザイン会社です。家具やプロダクトの商品開発およびディレクション業務、インテリアに関する企画、プランニング及びデザインなど設計業務、各種プランニングおよびディレクション業務また企業のコンサルティング業務などを行っています。" />-->
+	<link rel="shortcut icon" href="/common/img/favicon.ico" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
+	
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="/common/css/style.css">
+
+    <!--Google Analytics-->
+<!--    <link href="/common/css/reveal-it.css" rel="stylesheet" type="text/css" />  
+-->    
+<!--	 <script src="/common/js/jquery.min.js" type="text/javascript"></script>
+-->
+
+     	<script src="/common/js/libs.js" type="text/javascript"></script>
+
+<!--     <script src="/common/js/common.js" type="text/javascript"></script>
+-->
+	
+
+     
+   	<script src="/common/js/require.js"></script>	
+ <script>
+			var App = App || {};
+			App.PAGE_ID = '';
+			App.LANG = '';
+			App.BASEURL = '';
+	        App.VERSION = (new Date()).getTime();
+	        App.SUBMITTEDFORM = false;
+	        App.VERSION = "0.6";
+	        require.config({
+	            urlArgs : "bust="+App.VERSION,
+	            baseUrl : "./common/js"
+	        });
+			require(["./common/js/app.js"]);
+ 
+	       	// require(["./assets/js/app.js"]);
+	 </script>  
+   <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-20499489-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+    
+     <script type="text/javascript">
+/*//--创建页面监听，等待微信端页面加载完毕 触发音频播放
+    document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
+//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+document.addEventListener('touchstart', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+    }
+    audioAutoPlay();
+});*/
+	 //音乐自动播放
+        $(document).ready(function(){
+            autoPlayMusic();
+            audioAutoPlay();
+        });
+        function audioAutoPlay() {
+            var audio = document.getElementById('audio');
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+            }, false);
+        }
+        // 音乐播放
+        function autoPlayMusic() {
+            // 自动播放音乐效果，解决浏览器或者APP自动播放问题
+            function musicInBrowserHandler() {
+                musicPlay(true);
+                document.body.removeEventListener('touchstart', musicInBrowserHandler);
+            }
+            document.body.addEventListener('touchstart', musicInBrowserHandler);
+            // 自动播放音乐效果，解决微信自动播放问题
+            function musicInWeixinHandler() {
+                musicPlay(true);
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    musicPlay(true);
+                }, false);
+                document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
+            }
+            document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
+        }
+        function musicPlay(isPlay) {
+            var media = document.querySelector('#audio');
+            if (isPlay && media.paused) {
+                media.play();
+            }
+            if (!isPlay && !media.paused) {
+                media.pause();
+            }
+        }		
+
+
+	 
+		
+	 
+	function stop_audio(){
+ 		var audio = document.getElementById('audio'); 
+		audio.pause();
+	}
+	
+/*	var audio=document.createElement('audio');
+	audio.src='/common/audio/birds-loop.mp3';
+	window.addEventListener('touchstart', function(){
+	audio.play();
+	}, false);*/
+	
+	window.addEventListener('load', function () {
+        var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        var source = audioCtx.createBufferSource();
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/common/audio/birds-loop.mp3');
+        xhr.responseType = 'arraybuffer';
+        xhr.addEventListener('load', function (r) {
+            audioCtx.decodeAudioData(
+                    xhr.response, 
+                    function (buffer) {
+                        source.buffer = buffer;
+                        source.connect(audioCtx.destination);
+                        source.loop = true;
+                    });
+            source.start(0);
+        });
+        xhr.send();
+    });
+
+	
+	
+	</script>
+
+</head>
+<body id="mikiyakobayashi" class="index">
+
+
+<audio   id="audio"  preload="auto"   loop="loop"  src="/common/audio/birds-loop.mp3" ></audio>
+
+
+
+<!--<audio  class="birds-loop loop" src="/common/audio/birds-loop.mp3" loop></audio>
+-->
+<!---->
+<div id="wrap">
+<div id="header">
+	<div class="container">
+		
+		<h1 id="logo"><a href="/" class="hover-line"><span>SUMMER SIDE</span></a></h1>
+		
+
+		<div id="gnavi" class="nav">
+			<div class="nav-btn">
+				<a href="#gnavi-links">
+					<span class="bars">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</span>
+					<span class="label"></span>
+				</a>
+			</div>
+		</div>
+
+		
+	</div>
+</div>
+
+<div id="contents-wrap">
+	<div id="contents">
+<!--        <div class="homelogo"><img src="http://localhost/homelogo.png" /></div>
+        
+        <div class="box2"><p>雨季一过&nbsp;   鸟儿飞来&nbsp;   站立在枝头&nbsp;   抖落了雨滴和叶子&nbsp;   仿佛说这是它的新窝</p></div>-->
+        
+        
+		<div id="top" class="content">
+			<div id="birds-canvas-holder"></div>
+            <div id="stage">
+            
+            <div class="homelogo"><img src="homelogo.png" /></div>
+        
+        
+       
+        	<div class="slogon">雨季一过&nbsp;   鸟儿飞来&nbsp;   站立在枝头&nbsp;   抖落了雨滴和叶子&nbsp;   仿佛说这是它的新窝</div>
+      
+				<!--<div id="site-name">MIKIYA KOBAYASHI</div>-->
+               
+				<!--<ul id="images">
+				
+				
+					<li><img src="http://localhost/img001.jpg" alt="top01" /></li>
+				
+				
+				
+					<li><img src="http://localhost/upload/YAMANAMI_4260WW.jpg" alt="top02" /></li>
+				
+				
+				
+					<li><img src="http://localhost/upload/UDGW2_103_DC91803_WW.jpg" alt="top03" /></li>
+				
+				
+				
+					<li><img src="http://localhost/akc_4120w.jpg" alt="top04" /></li>
+				
+				
+				
+					<li><img src="http://localhost/oliveoil_0291w.jpg" alt="top05" /></li>
+				
+				
+				
+					<li><img src="http://localhost/TOP_KIME.jpg" alt="top06" /></li>
+				  
+				
+				</ul>-->
+				
+                
+				<div id="enter-bird">
+					<a onclick="javascript:stop_audio();" href="/video" target="_parent"><img src="enter.png" ></a>
+					<!--<div id="scroll-info-line"><div></div></div>-->
+				</div>
+			</div>
+<!-- 			<script src="/common/js/index.js" type="text/javascript"></script>
+-->
+<!--			<script>
+			
+	       	require(['index'],function(){})
+			require(['reveal-it'],function(){})
+			require(['main'],function(){})
+	       	// require(["./assets/js/app.js"]);
+			 </script>  -->     
+			<!--<script src="/common/js/index.js" type="text/javascript"></script>-->
+<!--            <script src="/common/js/reveal-it.js"></script>
+			<script src="/common/js/main.js" type="text/javascript"></script>-->
+		</div>
+	</div>
+</div>
+
+<!--	<script src="/common/js/jquery.min.js" type="text/javascript"></script>-->
+	
+
+
+</div>
+<div id="menu">
+<nav id="gnavi-links" class="nav-links">
+<ul class="hover-line-links">
+<li><a href="/projects"><span>PROJECTS</span></a></li>
+<li><a href="/news"><span>NEWS</span></a></li>
+<li><a href="/profile"><span>PROFILE</span></a></li>
+<li><a href="/press"><span>PRESS</span></a></li>
+<li><a href="/contact"><span>CONTACT</span></a></li>
+<!--<li><a href="http://www.taiyouandc.jp/" class="external"><span>TAIYOU&C.</span></a></li>
+<li><a href="http://www.taiyounoshita.jp/" class="external"><span>TAIYOU no SHITA</span></a></li>
+<li><a href="https://www.facebook.com/MikiyaKobayashiInc" class="external"><span>FACEBOOK</span></a></li>
+<li><a href="https://www.instagram.com/mikiyakobayashi/" class="external"><span>INSTAGRAM</span></a></li>
+<li><a href="https://www.instagram.com/mikiyakobayashi/" class="external"><span><i class="icon_in"></i></span></a></li>-->
+
+</ul>
+</nav>
+
+
+
+</div>
+<div id="footer">
+	<div class="container">
+		<div id="copyright" class="wfont">&copy; SUMMER SIDE FURNITURE INC. All Rights Reserved.</div>
+	</div>
+</div>
+
+
+
+    
+	
+ 
+</body>
+</html>
