@@ -44,7 +44,7 @@
 		background-size: 64px 64px;
 		
 	}
-	@media only screen and (max-width: 736px){
+/*	@media only screen and (max-width: 736px){
 	.vjs-default-skin .vjs-big-play-button{
 		background-size: 48px 48px;
 	}
@@ -60,9 +60,21 @@
 	.vjs-default-skin .vjs-big-play-button{
 		background-size: 24px 24px;
     }
-	}
+	}*/
 	
+	@media screen and (max-device-width:823px) and (max-device-height:414px)
+	{
+		.vjs-default-skin .vjs-big-play-button{
+			background-size: 48px 48px;
+		}
+	}
 
+	@media screen and (max-device-width:414px) and (max-device-height:823px)
+	{
+		.vjs-default-skin .vjs-big-play-button{
+			background-size: 48px 48px;	
+		}
+	}
 	
 	
 	
